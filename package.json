@@ -1,0 +1,48 @@
+{
+  "name": "pi-calm",
+  "version": "0.1.0",
+  "description": "Calmer pi transcript: Codex-style answer formatting, one-line tool calls, folded exploration, no scrolling tool spam",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tui",
+    "rendering"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test --disable-warning=ExperimentalWarning test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "@earendil-works/pi-tui": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.99.1",
+    "@earendil-works/pi-tui": "*",
+    "@types/node": "^24.13.6",
+    "typescript": "5.9"
+  }
+}
