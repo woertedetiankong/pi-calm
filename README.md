@@ -22,8 +22,10 @@
 ## 安装
 
 ```sh
-pi install /path/to/pi-tui      # 或者只试一次：pi -e /path/to/pi-tui/index.ts
+pi install git:github.com/woertedetiankong/pi-calm     # 或者只试一次：pi -e git:github.com/woertedetiankong/pi-calm
 ```
+
+从本地目录安装：`pi install /path/to/pi-calm`，或 `pi -e /path/to/pi-calm/index.ts` 只在本次运行加载。
 
 ## 使用
 

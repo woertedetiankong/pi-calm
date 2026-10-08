@@ -1,1 +1,3 @@
 node_modules/
+# Local pi data from trying the plugin in its own repository (knowledge bases, board settings)
+.pi/
